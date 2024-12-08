@@ -43,9 +43,10 @@ const Home = () => {
             placeholder="Type here"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            className="w-full max-w-xs mr-3 rounded-full input input-bordered input-warning"
+            className="w-full max-w-xs mr-3 rounded-lg input input-bordered input-ghost"
           />
-          <button className="px-4 py-2 font-bold bg-red-700 rounded-full ">
+
+          <button className="px-4 py-2 font-bold rounded-lg hover:glass btn btn-outline btn-error">
             Search
           </button>
         </form>
@@ -55,7 +56,7 @@ const Home = () => {
           <span className="loading loading-ring loading-lg"></span>
         </div>
       ) : (
-        <div className="movies-grid  mt-10 gap-6 grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3  lg:grid-cols-4 place-items-center">
+        <div className="grid grid-cols-1 gap-6 mt-10 movies-grid sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 place-items-center">
           {movies.map((movie) => (
             <MovieCard movie={movie} key={movie.id} />
           ))}

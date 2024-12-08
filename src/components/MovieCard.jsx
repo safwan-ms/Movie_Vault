@@ -12,7 +12,7 @@ const MovieCard = ({ movie }) => {
     else addItem(movie);
   };
   return (
-    <div className="hover:glass hover:-translate-y-2  ease-in-out duration-100 bg-black rounded-2xl w-[300px] sm:w-[200px] md:w-[200px] lg:w-[250px] lg:h-[500px] relative  ">
+    <div className="hover:glass hover:scale-95 lg:hover:scale-105 ease-in-out duration-100 bg-black rounded-2xl w-[300px] sm:w-[200px] md:w-[200px] lg:w-[250px] lg:h-[500px] relative  ">
       <div className="card ">
         <figure className="w-full">
           <img
@@ -21,8 +21,10 @@ const MovieCard = ({ movie }) => {
           />
         </figure>
         <div className="px-5 card-body">
-          <h2 className="text-xs card-title">{movie.title}</h2>
-          <p className="text-xs">{movie.release_date.split("-")[0]}</p>
+          <h2 className="text-xs md:text-base card-title">{movie.title}</h2>
+          <p className="text-xs md:text-base">
+            {movie.release_date.split("-")[0]}
+          </p>
           <div className="justify-end card-actions">
             <button
               className={`absolute btn btn-white top-2 right-2  ${
