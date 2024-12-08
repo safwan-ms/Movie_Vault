@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import React from "react";
 const Navbar = () => {
   return (
-    <div className="bg-black navbar">
+    <div className="bg-black navbar ">
       <div className="flex-1">
         <Link to="/" className="text-xl btn btn-ghost text-warning">
           Movie App
