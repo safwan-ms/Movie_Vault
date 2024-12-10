@@ -46,10 +46,10 @@ const Home = () => {
             placeholder="Type here"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            className="w-full xs:input-sm max-w-xs mr-3 rounded-lg input input-bordered input-ghost"
+            className="w-full input-sm md:input-md max-w-xs mr-3 rounded-lg input input-bordered input-ghost"
           />
 
-          <button className="px-4 py-2 font-bold rounded-lg hover:glass btn hover:text-warning lg:btn-outline lg:btn-error">
+          <button className="btn-sm md:btn-md px-4 py-2 font-bold rounded-lg hover:glass btn hover:text-warning lg:btn-outline lg:btn-error">
             Search
           </button>
         </form>
