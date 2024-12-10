@@ -37,13 +37,16 @@ const Home = () => {
   return (
     <div className="home">
       <div>
-        <form onSubmit={handleSearch} className="flex justify-center mt-7">
+        <form
+          onSubmit={handleSearch}
+          className="flex justify-center mt-7 mx-5 "
+        >
           <input
             type="text"
             placeholder="Type here"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            className="w-full max-w-xs mr-3 rounded-lg input input-bordered input-ghost"
+            className="w-full xs:input-sm max-w-xs mr-3 rounded-lg input input-bordered input-ghost"
           />
 
           <button className="px-4 py-2 font-bold rounded-lg hover:glass btn btn-outline btn-error">
