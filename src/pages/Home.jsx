@@ -43,7 +43,7 @@ const Home = () => {
         >
           <input
             type="text"
-            placeholder="Type here"
+            placeholder="Search for Movies"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             className="w-full input-sm md:input-md max-w-xs mr-3 rounded-lg input input-bordered input-ghost"
