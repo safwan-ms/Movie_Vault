@@ -49,7 +49,7 @@ const Home = () => {
             className="w-full input-sm md:input-md max-w-xs mr-3 rounded-lg input input-bordered input-ghost"
           />
 
-          <button className="btn-sm md:btn-md px-4 py-2 font-bold rounded-lg hover:glass btn hover:text-warning lg:btn-outline lg:btn-error">
+          <button className="btn btn-outline btn-warning btn-sm md:btn-md">
             Search
           </button>
         </form>
